@@ -1,8 +1,9 @@
 import FormItem from "./FormItem";
+import "../styles/OrderInfo.css";
 
 const OrderInfo = () => {
   return (
-    <section>
+    <section className="pageSection orderInfo">
       <h1>Order Information</h1>
       <form>
         <FormItem name="date" label="Date" type="text" placeholder="date" />

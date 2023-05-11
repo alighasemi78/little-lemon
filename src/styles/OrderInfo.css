@@ -1,0 +1,20 @@
+.orderInfo {
+  background-color: var(--primary1);
+  grid-template-rows: repeat(2, auto);
+  gap: 60px;
+}
+
+.orderInfo > * {
+  grid-column: 3 / span 8;
+}
+
+.orderInfo > h1 {
+  color: var(--primary2);
+  justify-self: center;
+}
+
+.orderInfo form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+}

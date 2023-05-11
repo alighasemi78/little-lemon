@@ -1,9 +1,11 @@
+import "../styles/SpecialCard.css";
+
 const SpecialCard = (props) => {
   return (
-    <article>
+    <article className="specialCard">
       <img src={props.image} alt="specialImage" />
-      <main>
-        <header>
+      <main className="specialCardMain">
+        <header className="specialCardMainHeader">
           <h3>{props.title}</h3>
           <p>{props.price}</p>
         </header>

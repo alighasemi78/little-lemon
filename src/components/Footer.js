@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/Asset 9@4x 1.png";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="pageSection footer">
       <img src={logo} alt="logo" />
-      <main>
-        <section>
+      <main className="footerMain">
+        <section className="footerMainSection">
           <header>Doormat navigation</header>
-          <ul>
+          <ul className="footerMainUl">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -29,17 +30,17 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section className="footerMainSection">
           <header>Contract</header>
-          <ul>
+          <ul className="footerMainUl">
             <li>Address</li>
             <li>Phone number</li>
             <li>Email</li>
           </ul>
         </section>
-        <section>
+        <section className="footerMainSection">
           <header>Social media links</header>
-          <ul>
+          <ul className="footerMainUl">
             <li>Address</li>
             <li>Phone number</li>
             <li>Email</li>

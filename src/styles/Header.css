@@ -1,0 +1,27 @@
+.header {
+  align-items: center;
+}
+
+.headerLogo {
+  grid-column: 3 / span 2;
+}
+
+.headerNav {
+  grid-column: 5 / span 6;
+}
+
+.headerUl {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-items: end;
+}
+
+.headerUl a {
+  font: var(--sectionCategories);
+  color: var(--secondary4);
+  text-decoration: none;
+}
+
+.headerUl a:hover {
+  text-decoration: underline;
+}

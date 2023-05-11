@@ -1,10 +1,11 @@
 import Review from "./Review";
+import "../styles/Testimonials.css";
 
 const Testimonials = () => {
   return (
-    <section>
+    <section className="pageSection testimonials">
       <h1>Testimonials</h1>
-      <main>
+      <main className="testimonialsMain">
         <Review />
         <Review />
         <Review />

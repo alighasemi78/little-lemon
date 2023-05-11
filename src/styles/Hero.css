@@ -1,0 +1,38 @@
+.hero {
+  background-color: var(--primary1);
+}
+
+.heroMain {
+  grid-column: 3 / span 4;
+}
+
+.hero img {
+  grid-column: 7 / span 4;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.heroMain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto) 1fr auto;
+  column-gap: 20px;
+}
+
+.heroMain h1 {
+  color: var(--primary2);
+  grid-column: 1 / span 4;
+}
+
+.heroMain h2,
+.heroMain p {
+  color: var(--secondary3);
+  grid-column: 1 / span 4;
+}
+
+.heroMain .button {
+  grid-column: 1 / span 2;
+  background-color: var(--primary2);
+  font: var(--leadText);
+  color: var(--secondary4);
+}

@@ -1,10 +1,11 @@
 import Button from "./Button";
 import hero from "../assets/images/restauranfood.jpg";
+import "../styles/Hero.css";
 
 const Hero = () => {
   return (
-    <section>
-      <main>
+    <section className="pageSection hero">
+      <main className="heroMain">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>

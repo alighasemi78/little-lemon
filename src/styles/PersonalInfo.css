@@ -1,0 +1,32 @@
+.personalInfo {
+  grid-template-rows: repeat(2, auto);
+  row-gap: 60px;
+}
+
+.personalInfo > * {
+  grid-column: 3 / span 8;
+}
+
+.personalInfo > h1 {
+  color: var(--secondary4);
+  justify-self: center;
+}
+
+.personalInfo > form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px 20px;
+}
+
+.personalInfo .button {
+  font: var(--subTitle);
+  color: var(--secondary4);
+}
+
+.personalInfo .button:first-of-type {
+  background-color: var(--secondary2);
+}
+
+.personalInfo .button:last-of-type {
+  background-color: var(--primary2);
+}

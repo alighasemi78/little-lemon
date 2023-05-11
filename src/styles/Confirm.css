@@ -1,0 +1,24 @@
+.confirmMessages {
+  background-color: var(--primary1);
+  justify-items: center;
+  row-gap: 10px;
+}
+
+.confirmMessages > * {
+  grid-column: 3 / span 8;
+}
+
+.confirmMessages h1:first-of-type {
+  color: var(--primary2);
+}
+
+.confirmMessages h1:first-of-type ~ * {
+  color: var(--secondary3);
+}
+
+.confirmButton .button {
+  grid-column: 5 / span 4;
+  background-color: var(--primary2);
+  font: var(--subTitle);
+  color: var(--secondary4);
+}

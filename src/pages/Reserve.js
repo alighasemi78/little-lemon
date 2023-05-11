@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import OrderInfo from "../components/OrderInfo";
-import PersonalInformation from "../components/PersonalInfo";
+import PersonalInfo from "../components/PersonalInfo";
 
 const Reserve = () => {
   return (
@@ -9,7 +9,7 @@ const Reserve = () => {
       <Header />
       <main>
         <OrderInfo />
-        <PersonalInformation />
+        <PersonalInfo />
       </main>
       <Footer />
     </>

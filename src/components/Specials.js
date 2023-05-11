@@ -3,15 +3,16 @@ import SpecialCard from "./SpecialCard";
 import greekSalad from "../assets/images/greek salad.jpg";
 import bruchetta from "../assets/images/bruchetta.svg";
 import lemonDessert from "../assets/images/lemon dessert.jpg";
+import "../styles/Specials.css";
 
 const Specials = () => {
   return (
-    <section>
-      <header>
+    <section className="pageSection specials">
+      <header className="specialsHeader">
         <h1>This weeks specials!</h1>
         <Button>Online Menu</Button>
       </header>
-      <main>
+      <main className="specialsMain">
         <SpecialCard
           image={greekSalad}
           title="Greek Salad"

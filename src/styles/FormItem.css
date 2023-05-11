@@ -1,0 +1,23 @@
+.formItem {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.formItem label {
+  font: var(--subTitle);
+  color: var(--secondary3);
+}
+
+.formItem.dark label {
+  color: var(--secondary4);
+}
+
+.formItem input {
+  aspect-ratio: 5 / 1;
+}
+
+.formItem span {
+  font: var(--highlightText);
+  color: red;
+}

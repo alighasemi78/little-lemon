@@ -1,0 +1,34 @@
+.aboutMain {
+  grid-column: 3 / span 4;
+}
+
+.aboutMain h1 {
+  color: var(--primary1);
+}
+
+.aboutMain h2,
+.aboutMain p {
+  color: var(--secondary4);
+}
+
+.aboutSide {
+  grid-column: 7 / span 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.aboutSide img {
+  aspect-ratio: 53 / 65;
+  object-fit: cover;
+}
+
+.aboutSide img:first-of-type {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 4;
+}
+
+.aboutSide img:last-of-type {
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 4;
+}

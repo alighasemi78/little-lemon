@@ -1,13 +1,68 @@
+:root {
+  --karla: "Karla", sans-serif;
+  --markazi: "Markazi Text", serif;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+  --extraBold: 800;
+  --displayTitle: var(--medium) 64px var(--markazi);
+  --subTitle: var(--regular) 40px var(--markazi);
+  --leadText: var(--medium) 18px var(--karla);
+  --sectionTitle: var(--extraBold) 20px var(--karla);
+  --sectionCategories: var(--extraBold) 16px var(--karla);
+  --cardTitle: var(--bold) 18px var(--karla);
+  --paragraphText: var(--regular) 16px var(--karla);
+  --highlightText: var(--medium) 16px var(--karla);
+  --primary1: #495e57;
+  --primary2: #f4ce14;
+  --secondary1: #ee9972;
+  --secondary2: #fbdabb;
+  --secondary3: #edefee;
+  --secondary4: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font: var(--displayTitle);
+}
+
+h2 {
+  font: var(--subTitle);
+}
+
+h3 {
+  font: var(--cardTitle);
+}
+
+ul {
+  list-style: none;
+}
+
+.pageSection {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 60px 70px;
+  column-gap: 20px;
+}
+
+img {
+  width: 100%;
 }

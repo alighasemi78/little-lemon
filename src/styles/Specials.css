@@ -1,0 +1,33 @@
+.specials {
+  grid-template-rows: repeat(2, auto);
+  row-gap: 60px;
+}
+
+.specials > * {
+  grid-column: 3 / span 8;
+}
+
+.specialsHeader {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.specialsHeader h1 {
+  grid-column: 1 / span 6;
+  color: var(--secondary4);
+}
+
+.specialsHeader .button {
+  grid-column: 7 / span 2;
+  background-color: var(--primary2);
+  font: var(--leadText);
+  color: var(--secondary4);
+}
+
+.specialsMain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}

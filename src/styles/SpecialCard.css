@@ -1,0 +1,43 @@
+.specialCard {
+  background-color: var(--secondary3);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.specialCard img {
+  aspect-ratio: 265 / 192;
+  object-fit: cover;
+}
+
+.specialCardMain {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.specialCardMainHeader {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialCardMainHeader h3 {
+  color: var(--secondary4);
+}
+
+.specialCardMainHeader p {
+  font: var(--highlightText);
+  color: var(--secondary1);
+}
+
+.specialCardMain > p:first-of-type {
+  font: var(--paragraphText);
+  color: var(--secondary4);
+}
+
+.specialCardMain > p:last-of-type {
+  font: var(--leadText);
+  color: var(--secondary4);
+}

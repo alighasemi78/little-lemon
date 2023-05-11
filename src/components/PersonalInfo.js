@@ -1,9 +1,10 @@
 import Button from "./Button";
 import FormItem from "./FormItem";
+import "../styles/PersonalInfo.css";
 
-const PersonalInformation = () => {
+const PersonalInfo = () => {
   return (
-    <section>
+    <section className="pageSection personalInfo">
       <h1>Personal Information</h1>
       <form>
         <FormItem
@@ -11,12 +12,14 @@ const PersonalInformation = () => {
           label="Name"
           type="text"
           placeholder="enter your name"
+          dark
         />
         <FormItem
           name="email"
           label="Email"
           type="email"
           placeholder="enter your email"
+          dark
         />
         <Button>Back</Button>
         <Button>Confirm</Button>
@@ -25,4 +28,4 @@ const PersonalInformation = () => {
   );
 };
 
-export default PersonalInformation;
+export default PersonalInfo;

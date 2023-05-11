@@ -1,10 +1,11 @@
 import about1 from "../assets/images/restaurant.jpg";
 import about2 from "../assets/images/Mario and Adrian A.jpg";
+import "../styles/About.css";
 
 const About = () => {
   return (
-    <section>
-      <main>
+    <section className="pageSection">
+      <main className="aboutMain">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>
@@ -14,7 +15,7 @@ const About = () => {
           incidunt temporibus.
         </p>
       </main>
-      <aside>
+      <aside className="aboutSide">
         <img src={about1} alt="about1" />
         <img src={about2} alt="about2" />
       </aside>

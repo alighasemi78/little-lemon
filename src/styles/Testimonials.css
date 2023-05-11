@@ -1,0 +1,20 @@
+.testimonials {
+  background-color: var(--primary1);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 60px;
+}
+
+.testimonials > * {
+  grid-column: 3 / span 8;
+}
+
+.testimonials h1 {
+  justify-self: center;
+  color: var(--primary2);
+}
+
+.testimonialsMain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

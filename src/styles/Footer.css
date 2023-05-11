@@ -1,0 +1,42 @@
+.footer {
+  background-color: var(--primary1);
+}
+
+.footer > img {
+  grid-column: 3 / span 1;
+}
+
+.footerMain {
+  grid-column: 5 / span 6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footerMainSection {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 25px;
+}
+
+.footerMainSection header {
+  font: var(--sectionCategories);
+  color: var(--primary2);
+}
+
+.footerMainUl {
+  display: grid;
+  grid-template-columns: auto;
+  align-content: start;
+  gap: 15px;
+}
+
+.footerMainUl a,
+.footerMainUl li {
+  font: var(--highlightText);
+  color: var(--secondary3);
+  text-decoration: none;
+}
+
+.footerMainUl a:hover {
+  text-decoration: underline;
+}
