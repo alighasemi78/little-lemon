@@ -13,8 +13,12 @@
   justify-self: center;
 }
 
-.orderInfo form {
+.orderInfo main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px 20px;
+}
+
+.orderInfo main .formItem:last-of-type {
+  grid-column: 1 / span 2;
 }

@@ -1,8 +1,11 @@
 import Button from "./Button";
 import hero from "../assets/images/restauranfood.jpg";
 import "../styles/Hero.css";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="pageSection hero">
       <main className="heroMain">
@@ -14,7 +17,7 @@ const Hero = () => {
           inventore provident quidem earum at quae ea laborum nihil, fugit
           incidunt temporibus.
         </p>
-        <Button>Reserve a table</Button>
+        <Button onClick={() => navigate("/reserve")}>Reserve a table</Button>
       </main>
       <img src={hero} alt="hero" />
     </section>

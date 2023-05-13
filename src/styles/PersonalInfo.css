@@ -12,7 +12,7 @@
   justify-self: center;
 }
 
-.personalInfo > form {
+.personalInfo > main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 100px 20px;

@@ -13,8 +13,24 @@
   color: var(--secondary4);
 }
 
-.formItem input {
+.formItem input,
+.formItem select,
+.formItem textarea {
   aspect-ratio: 5 / 1;
+  border-radius: 8px;
+  background-color: var(--secondary3);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  font: var(--sectionTitle);
+  text-transform: uppercase;
+  color: var(--primary1);
+}
+
+.formItem textarea {
+  resize: none;
+  aspect-ratio: 172 / 29;
 }
 
 .formItem span {
