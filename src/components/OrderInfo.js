@@ -6,31 +6,37 @@ const OrderInfo = (props) => {
     <section className="pageSection orderInfo">
       <h1>Order Information</h1>
       <main>
-        <FormItem name="date" label="Date" required>
+        <FormItem name="date" label="Date" required formik={props.formik}>
           <input
-            name="date"
+            {...props.formik.getFieldProps("date")}
             type="date"
-            placeholder="date"
+            placeholder="Date"
             required
-            value={props.formData.date}
-            onChange={(e) => props.handleChange(e, "date")}
           />
         </FormItem>
-        <FormItem name="time" label="Time" required>
-          <input
-            name="time"
-            type="time"
-            required
-            value={props.formData.time}
-            onChange={(e) => props.handleChange(e, "time")}
-          />
-        </FormItem>
-        <FormItem name="occasion" label="Occasion">
+        <FormItem name="time" label="Time" required formik={props.formik}>
           <select
-            name="occasion"
+            {...props.formik.getFieldProps("time")}
+            placeholder="Time"
+            required
+            disabled={props.availableTimes.length === 0}
+          >
+            <option value="" disabled hidden>
+              Time
+            </option>
+            {props.availableTimes.map((time) => {
+              return (
+                <option key={time} value={time}>
+                  {time}
+                </option>
+              );
+            })}
+          </select>
+        </FormItem>
+        <FormItem name="occasion" label="Occasion" formik={props.formik}>
+          <select
+            {...props.formik.getFieldProps("occasion")}
             placeholder="Occasion"
-            value={props.formData.occasion}
-            onChange={(e) => props.handleChange(e, "occasion")}
           >
             <option value="" disabled hidden>
               Occasion
@@ -40,24 +46,29 @@ const OrderInfo = (props) => {
             <option value="anniversary">anniversary</option>
           </select>
         </FormItem>
-        <FormItem name="numberOfPeople" label="Number of people" required>
+        <FormItem
+          name="numberOfPeople"
+          label="Number of people"
+          required
+          formik={props.formik}
+        >
           <input
-            name="numberOfPeople"
+            {...props.formik.getFieldProps("numberOfPeople")}
             type="number"
             placeholder="Number of people"
             min={1}
             max={10}
             required
-            value={props.formData.numberOfPeople}
-            onChange={(e) => props.handleChange(e, "numberOfPeople")}
           />
         </FormItem>
-        <FormItem name="tablePosition" label="Table position">
+        <FormItem
+          name="tablePosition"
+          label="Table position"
+          formik={props.formik}
+        >
           <select
-            name="tablePosition"
+            {...props.formik.getFieldProps("tablePosition")}
             placeholder="Table Position"
-            value={props.formData.tablePosition}
-            onChange={(e) => props.handleChange(e, "tablePosition")}
           >
             <option value="" disabled hidden>
               Table Position
@@ -66,12 +77,10 @@ const OrderInfo = (props) => {
             <option value="outside">outside</option>
           </select>
         </FormItem>
-        <FormItem name="notes" label="Notes">
+        <FormItem name="notes" label="Notes" formik={props.formik}>
           <textarea
-            name="notes"
+            {...props.formik.getFieldProps("notes")}
             placeholder="write your notes"
-            value={props.formData.notes}
-            onChange={(e) => props.handleChange(e, "notes")}
           />
         </FormItem>
       </main>

@@ -8,7 +8,9 @@ const FormItem = (props) => {
         {props.required && " *"}
       </label>
       {props.children}
-      {/* <span>ERROR</span> */}
+      {props.formik.touched[props.name] && props.formik.errors[props.name] && (
+        <span>{props.formik.errors[props.name]}</span>
+      )}
     </div>
   );
 };

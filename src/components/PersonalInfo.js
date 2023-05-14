@@ -10,23 +10,25 @@ const PersonalInfo = (props) => {
     <section className="pageSection personalInfo">
       <h1>Personal Information</h1>
       <main>
-        <FormItem name="name" label="Name" dark required>
+        <FormItem name="name" label="Name" dark required formik={props.formik}>
           <input
-            name="name"
+            {...props.formik.getFieldProps("name")}
             placeholder="enter your name"
             required
-            value={props.formData.name}
-            onChange={(e) => props.handleChange(e, "name")}
           />
         </FormItem>
-        <FormItem name="email" label="Email" dark required>
+        <FormItem
+          name="email"
+          label="Email"
+          dark
+          required
+          formik={props.formik}
+        >
           <input
-            name="email"
+            {...props.formik.getFieldProps("email")}
             type="email"
             placeholder="enter your email"
             required
-            value={props.formData.email}
-            onChange={(e) => props.handleChange(e, "email")}
           />
         </FormItem>
         <Button onClick={() => navigate("/")}>Back</Button>
