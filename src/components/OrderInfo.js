@@ -9,6 +9,7 @@ const OrderInfo = (props) => {
         <FormItem name="date" label="Date" required formik={props.formik}>
           <input
             {...props.formik.getFieldProps("date")}
+            id="date"
             type="date"
             placeholder="Date"
             required
@@ -17,6 +18,7 @@ const OrderInfo = (props) => {
         <FormItem name="time" label="Time" required formik={props.formik}>
           <select
             {...props.formik.getFieldProps("time")}
+            id="time"
             placeholder="Time"
             required
             disabled={props.availableTimes.length === 0}
@@ -36,6 +38,7 @@ const OrderInfo = (props) => {
         <FormItem name="occasion" label="Occasion" formik={props.formik}>
           <select
             {...props.formik.getFieldProps("occasion")}
+            id="occasion"
             placeholder="Occasion"
           >
             <option value="" disabled hidden>
@@ -54,6 +57,7 @@ const OrderInfo = (props) => {
         >
           <input
             {...props.formik.getFieldProps("numberOfPeople")}
+            id="numberOfPeople"
             type="number"
             placeholder="Number of people"
             min={1}
@@ -68,6 +72,7 @@ const OrderInfo = (props) => {
         >
           <select
             {...props.formik.getFieldProps("tablePosition")}
+            id="tablePosition"
             placeholder="Table Position"
           >
             <option value="" disabled hidden>
@@ -80,6 +85,7 @@ const OrderInfo = (props) => {
         <FormItem name="notes" label="Notes" formik={props.formik}>
           <textarea
             {...props.formik.getFieldProps("notes")}
+            id="notes"
             placeholder="write your notes"
           />
         </FormItem>

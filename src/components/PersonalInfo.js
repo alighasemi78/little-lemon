@@ -13,6 +13,7 @@ const PersonalInfo = (props) => {
         <FormItem name="name" label="Name" dark required formik={props.formik}>
           <input
             {...props.formik.getFieldProps("name")}
+            id="name"
             placeholder="enter your name"
             required
           />
@@ -26,13 +27,18 @@ const PersonalInfo = (props) => {
         >
           <input
             {...props.formik.getFieldProps("email")}
+            id="email"
             type="email"
             placeholder="enter your email"
             required
           />
         </FormItem>
-        <Button onClick={() => navigate("/")}>Back</Button>
-        <Button type="submit">Confirm</Button>
+        <Button onClick={() => navigate("/")} aria-label="back">
+          Back
+        </Button>
+        <Button type="submit" aria-label="confirm">
+          Confirm
+        </Button>
       </main>
     </section>
   );
